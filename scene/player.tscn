@@ -57,12 +57,6 @@ script = ExtResource("1_fb8y7")
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_taaby")
 
-[node name="camera" type="Camera2D" parent="."]
-position = Vector2(2, -290)
-limit_left = 0
-limit_top = 0
-editor_draw_limits = true
-
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_scn5h")
@@ -83,6 +77,11 @@ monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_00rtn")
+
+[node name="wallchecker" type="RayCast2D" parent="."]
+rotation = -1.5708
+target_position = Vector2(0, 25)
+collision_mask = 2
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
