@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cy043kv65bhf1"]
 
-[ext_resource type="Texture2D" uid="uid://d0mi2hudmhmb" path="res://assents/button/Blue-Buttons/42 px/About.png" id="1_u5guj"]
+[ext_resource type="Texture2D" uid="uid://d0mi2hudmhmb" path="res://assents/button/About.png" id="1_u5guj"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_63w1p"]
 animations = [{
@@ -16,7 +16,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nf73l"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yamkm"]
-radius = 35.0143
+radius = 21.0238
 
 [node name="button" type="CharacterBody2D"]
 

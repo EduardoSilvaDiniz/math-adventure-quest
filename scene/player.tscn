@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://b3mjn0718qqhw"]
 
 [ext_resource type="Script" path="res://script/player.gd" id="1_fb8y7"]
-[ext_resource type="Texture2D" uid="uid://8nc1gjjpwoi" path="res://assents/images/player/1 - Dr. Science/Idle (16 x 16).png" id="2_dn1qb"]
-[ext_resource type="Texture2D" uid="uid://bf06b45ye1hoo" path="res://assents/images/player/1 - Dr. Science/Jump (16 x 16).png" id="3_vfw4j"]
-[ext_resource type="Texture2D" uid="uid://c08v4qrnliof2" path="res://assents/images/player/1 - Dr. Science/Run (16 x 16).png" id="4_ep4fc"]
+[ext_resource type="Texture2D" uid="uid://8nc1gjjpwoi" path="res://assents/player/Idle (16 x 16).png" id="2_dn1qb"]
+[ext_resource type="Texture2D" uid="uid://bf06b45ye1hoo" path="res://assents/player/Jump (16 x 16).png" id="3_vfw4j"]
+[ext_resource type="Texture2D" uid="uid://c08v4qrnliof2" path="res://assents/player/Run (16 x 16).png" id="4_ep4fc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_taaby"]
 size = Vector2(26, 28)
@@ -20,18 +20,18 @@ region = Rect2(16, 0, 16, 16)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_dn1qb")
+"texture": ExtResource("3_vfw4j")
 }],
 "loop": true,
-"name": &"idle",
+"name": &"air",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_vfw4j")
+"texture": ExtResource("2_dn1qb")
 }],
 "loop": true,
-"name": &"jump",
+"name": &"idle",
 "speed": 5.0
 }, {
 "frames": [{
@@ -42,12 +42,12 @@ animations = [{
 "texture": SubResource("AtlasTexture_rb7r3")
 }],
 "loop": true,
-"name": &"run",
+"name": &"walk",
 "speed": 5.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_00rtn"]
-radius = 35.0143
+radius = 23.0
 
 [node name="player" type="CharacterBody2D"]
 collision_mask = 2
@@ -66,7 +66,7 @@ editor_draw_limits = true
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_scn5h")
-animation = &"jump"
+animation = &"walk"
 
 [node name="Label" type="Label" parent="."]
 offset_left = -60.0
