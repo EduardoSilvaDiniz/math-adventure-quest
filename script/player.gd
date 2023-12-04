@@ -16,6 +16,10 @@ var direction = 1
 #var buttonTexture = preload("res://assents/background/2 - Autumn Forest/Terrain (16 x 16).png")
 #get_node("../..").add_child(button)
 
+var button_wall = false #confere se o botão da parede está sendo tocado
+var portal = false #confere se o portal está sendo tocado
+var teleporta = true #para não ficar teleportando toda hora
+
 func _physics_process(delta):
 	
 	match playerState: # swith que usa o situação atual do player
@@ -81,6 +85,14 @@ func _physics_process(delta):
 				velocity.y = JUMP_VELOCITY * 0.7
 			move_and_fall(delta, true) # atualiza o player
 	
+	if button_wall == true  and Input.is_key_pressed(KEY_E):
+		print("apertou o botão da parede")
+		button_wall = false #desligar para não clicar várias vezes o botão
+	if portal == true and Input.is_key_pressed(KEY_E) and teleporta == true:
+		get_tree().call_group("portal", "teleporta")
+		teleporta = false
+		get_node("Timer").start(0.5)
+
 func apply_push_force():
 	for obj in get_slide_collision_count():
 		var colli = get_slide_collision(obj)
@@ -101,8 +113,25 @@ func set_direction():
 func is_near_wall():
 	return wallchacker.is_colliding()
 
-func _on_area_2d_area_entered(area): # se o player se aproximar do botão
-	playerOnButton = true # a variavel se torna verdadeira
-	
-func _on_area_2d_area_exited(area): # se o player sai de perto do botão
-	playerOnButton = false # a variavel se torna falsa
+func _on_area_2d_area_entered(area):
+	if area.is_in_group("portal"):
+		portal = true
+	if area.is_in_group("botao_parede"):
+		print('tocou no botão da parede')
+		button_wall = true
+	Global.obj = area
+	pass # Replace with function body.
+
+
+func _on_area_2d_area_exited(area):
+	if area.is_in_group("portal"):
+		portal = false
+	if area.is_in_group("botao_parede"):
+		print('parou de tocar botão da parede')
+		button_wall = false
+	pass # Replace with function body.
+
+
+func _on_timer_timeout():
+	teleporta = true
+	pass # Replace with function body.

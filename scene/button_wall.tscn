@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://b8evg1cdujer5"]
+[gd_scene load_steps=5 format=3 uid="uid://b8evg1cdujer5"]
 
 [ext_resource type="Texture2D" uid="uid://dsyr5k0qme66y" path="res://assents/button/button-wall-disable.png" id="1_pbgqr"]
 
@@ -16,6 +16,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6lpq0"]
 size = Vector2(24, 24)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tmwp6"]
+size = Vector2(24, 24)
+
 [node name="buttonWall" type="CharacterBody2D"]
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
@@ -24,3 +27,9 @@ sprite_frames = SubResource("SpriteFrames_6gmca")
 
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6lpq0")
+
+[node name="Area2D" type="Area2D" parent="." groups=["wall_button"]]
+collision_layer = 16
+
+[node name="collision" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_tmwp6")

@@ -15,12 +15,15 @@ run/main_scene="res://scene/map1.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://script/global.gd"
+
 [display]
 
 window/size/viewport_width=1280
 window/size/viewport_height=720
 window/size/resizable=false
-window/stretch/scale=2.0
 
 [input]
 
@@ -46,6 +49,8 @@ interaction={
 2d_physics/layer_2="world"
 2d_physics/layer_3="box"
 2d_physics/layer_4="portal"
+2d_physics/layer_5="wall_button"
+2d_physics/layer_6="floor_button"
 
 [rendering]
 

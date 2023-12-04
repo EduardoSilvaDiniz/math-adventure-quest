@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://bjrpf78qhxpgu"]
+[gd_scene load_steps=6 format=3 uid="uid://bjrpf78qhxpgu"]
 
 [ext_resource type="Script" path="res://script/button_floor.gd" id="1_cjmek"]
 [ext_resource type="Texture2D" uid="uid://gbtx6ik84tro" path="res://assents/button/button-floor-disable.png" id="1_vvaew"]
@@ -23,6 +23,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oail2"]
+size = Vector2(53.3333, 37.3333)
+
 [node name="button_floor" type="Node2D"]
 script = ExtResource("1_cjmek")
 
@@ -31,7 +34,10 @@ scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_fg31y")
 animation = &"disable"
 
-[node name="boxdetect" type="RayCast2D" parent="."]
-rotation = 2.99149
-target_position = Vector2(-5.68234, 37.5727)
+[node name="Area2D" type="Area2D" parent="." groups=["floor_button"]]
+collision_layer = 32
 collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-2, 1.33331)
+shape = SubResource("RectangleShape2D_oail2")
