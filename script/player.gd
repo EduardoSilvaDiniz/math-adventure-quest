@@ -12,9 +12,12 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction = 1
 @onready var animation := $sprite as AnimatedSprite2D # variavel para manipular a sprite do player
 @onready var wallchacker := $wallchecker as RayCast2D
+#ar button = preload("res://scene/button.tscn").instance()
+#var buttonTexture = preload("res://assents/background/2 - Autumn Forest/Terrain (16 x 16).png")
+#get_node("../..").add_child(button)
 
 func _physics_process(delta):
-	print(is_near_wall())
+	
 	match playerState: # swith que usa o situação atual do player
 		STATES.AIR: # caso ele esteja no ar
 			animation.play("air") # muda a sprite para pulando
@@ -23,13 +26,13 @@ func _physics_process(delta):
 			elif is_near_wall():
 				playerState = STATES.WALL
 			if Input.is_action_pressed("ui_right"): # se precionar seta direita 
-				if Input.is_action_pressed("ui_up"): # se estiver segurando o botão de corre
+				if Input.is_action_pressed("run"): # se estiver segurando o botão de corre
 					velocity.x = lerp(velocity.x,RUNSPEED,0.1) # vai para direita com a velocidade de corrida
 				else:
 					velocity.x = lerp(velocity.x,SPEED,0.1) # vai para direita com a velocidade normal
 				animation.flip_h = false # inverte a sprite
 			elif Input.is_action_pressed("ui_left"): # a mesma coisa mas para esquerda
-				if Input.is_action_pressed("ui_up"):
+				if Input.is_action_pressed("run"):
 					velocity.x = lerp(velocity.x,-RUNSPEED,0.1)
 				else:
 					velocity.x = lerp(velocity.x,-SPEED,0.1)
@@ -39,14 +42,14 @@ func _physics_process(delta):
 
 		STATES.FLOOR: # caso ele esteja no chão
 			if Input.is_action_pressed("ui_right"): # se precionar seta direita
-				if Input.is_action_pressed("ui_up"): # se estiver segurando o botão de corre
+				if Input.is_action_pressed("run"): # se estiver segurando o botão de corre
 					velocity.x = lerp(velocity.x,RUNSPEED,0.1) # vai para direita com a velocidade de corrida
 				else:
 					velocity.x = lerp(velocity.x,SPEED,0.1) # vai para direita com a velocidade normal
 				animation.play("walk") # muda a sprite para andando
 				animation.flip_h = false # inverte a sprite
 			elif Input.is_action_pressed("ui_left"): # a mesma coisa mas para esquerda 
-				if Input.is_action_pressed("ui_up"):
+				if Input.is_action_pressed("run"):
 					velocity.x = lerp(velocity.x,-RUNSPEED,0.1)
 				else:
 					velocity.x = lerp(velocity.x,-SPEED,0.1)
@@ -56,13 +59,18 @@ func _physics_process(delta):
 				velocity.x = move_toward(velocity.x, 0, SPEED) # a velocidade volta para 0
 				animation.play("idle") # muda a sprite para parado
 				
-			if Input.is_action_pressed("ui_accept"): # se o player aperta espaço
+			if Input.is_action_pressed("jump"): # se o player aperta espaço
 				velocity.y = JUMP_VELOCITY # pula
 				playerState = STATES.AIR # e muda a situação para AIR, pulando
 			if not is_on_floor():
 				playerState = STATES.AIR
+			#if Input.is_action_pressed("interaction") and playerOnButton:
+				#button.changeSprite(buttonTexture)
+				#print("apertou")
 			move_and_fall(delta, false) # atualiza o player
 			set_direction()
+			apply_push_force()
+			
 		STATES.WALL:
 			if is_on_floor():
 				playerState = STATES.FLOOR
@@ -73,7 +81,11 @@ func _physics_process(delta):
 				velocity.y = JUMP_VELOCITY * 0.7
 			move_and_fall(delta, true) # atualiza o player
 	
-
+func apply_push_force():
+	for obj in get_slide_collision_count():
+		var colli = get_slide_collision(obj)
+		if colli.get_collider() is box:
+			colli.get_collider().slide_obj(-colli.get_normal())
 
 func move_and_fall(delta, slow_fall : bool):
 	if slow_fall:

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://0e33j7bdjbht"]
+
+[ext_resource type="Texture2D" uid="uid://be6py7a7vqk3f" path="res://assents/map 1/portal_azul.png" id="1_1crlp"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8dg2p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1crlp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bee0s"]
+size = Vector2(53, 84)
+
+[node name="portal" type="CharacterBody2D"]
+
+[node name="sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8dg2p")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 1)
+shape = SubResource("RectangleShape2D_bee0s")

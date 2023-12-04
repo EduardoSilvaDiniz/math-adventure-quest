@@ -50,7 +50,7 @@ animations = [{
 radius = 23.0
 
 [node name="player" type="CharacterBody2D"]
-collision_mask = 2
+collision_mask = 6
 script = ExtResource("1_fb8y7")
 
 [node name="collision" type="CollisionShape2D" parent="."]
@@ -80,7 +80,7 @@ shape = SubResource("CircleShape2D_00rtn")
 
 [node name="wallchecker" type="RayCast2D" parent="."]
 rotation = -1.5708
-target_position = Vector2(0, 25)
+target_position = Vector2(-5.42999e-05, 15)
 collision_mask = 2
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

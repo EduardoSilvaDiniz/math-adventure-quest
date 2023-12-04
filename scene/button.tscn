@@ -1,6 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cy043kv65bhf1"]
+[gd_scene load_steps=7 format=3 uid="uid://tkdk1773x25s"]
 
-[ext_resource type="Texture2D" uid="uid://d0mi2hudmhmb" path="res://assents/button/About.png" id="1_u5guj"]
+[ext_resource type="Script" path="res://script/button.gd" id="1_tm0ly"]
+[ext_resource type="Texture2D" path="res://assents/button/About.png" id="1_u5guj"]
+[ext_resource type="Texture2D" path="res://assents/background/2 - Autumn Forest/Terrain (16 x 16).png" id="3_dfg0y"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_63w1p"]
 animations = [{
@@ -11,6 +13,14 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_dfg0y")
+}],
+"loop": true,
+"name": &"older",
+"speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nf73l"]
@@ -19,6 +29,7 @@ animations = [{
 radius = 21.0238
 
 [node name="button" type="CharacterBody2D"]
+script = ExtResource("1_tm0ly")
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_63w1p")
