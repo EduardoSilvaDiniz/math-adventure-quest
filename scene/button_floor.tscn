@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bjrpf78qhxpgu"]
 
+[ext_resource type="Script" path="res://script/button_floor.gd" id="1_cjmek"]
 [ext_resource type="Texture2D" uid="uid://gbtx6ik84tro" path="res://assents/button/button-floor-disable.png" id="1_vvaew"]
-[ext_resource type="Script" path="res://scene/button_floor-a.gd" id="1_yf8bj"]
 [ext_resource type="Texture2D" uid="uid://df026lda2r0i5" path="res://assents/button/button-floor-enabled.png" id="2_rj217"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fg31y"]
@@ -24,7 +24,7 @@ animations = [{
 }]
 
 [node name="button_floor" type="Node2D"]
-script = ExtResource("1_yf8bj")
+script = ExtResource("1_cjmek")
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5, 0.5)

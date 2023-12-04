@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqngn24b7unjr"]
 
-[ext_resource type="Script" path="res://scene/box.gd" id="1_84v0k"]
 [ext_resource type="Texture2D" uid="uid://disr8uhntan55" path="res://assents/button/box.png" id="1_s7qo5"]
+[ext_resource type="Script" path="res://script/box.gd" id="1_xisg1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ewfr3"]
 animations = [{
@@ -20,7 +20,7 @@ size = Vector2(46, 46)
 [node name="box" type="CharacterBody2D"]
 collision_layer = 4
 collision_mask = 7
-script = ExtResource("1_84v0k")
+script = ExtResource("1_xisg1")
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.1, 0.1)
