@@ -207,18 +207,21 @@ position = Vector2(4658, 416)
 scale = Vector2(1.43996, 1.43996)
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("6_fu8bx")
 
 [node name="buttonWall_false2" parent="." instance=ExtResource("5_uvgfj")]
 position = Vector2(4710, 627)
 scale = Vector2(1.43996, 1.43996)
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("6_fu8bx")
 
 [node name="buttonWall_false3" parent="." instance=ExtResource("5_uvgfj")]
 position = Vector2(4441, 627)
 scale = Vector2(1.43996, 1.43996)
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("6_fu8bx")
 
 [node name="buttonWall_true2" parent="." instance=ExtResource("5_uvgfj")]
 position = Vector2(6158, 458)
@@ -232,18 +235,21 @@ position = Vector2(5566, 423)
 scale = Vector2(1.43996, 1.43996)
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("6_fu8bx")
 
 [node name="buttonWall_false5" parent="." instance=ExtResource("5_uvgfj")]
 position = Vector2(5567, 624)
 scale = Vector2(1.43996, 1.43996)
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("6_fu8bx")
 
 [node name="buttonWall_false6" parent="." instance=ExtResource("5_uvgfj")]
 position = Vector2(6163, 626)
 scale = Vector2(1.43996, 1.43996)
 collision_layer = 0
 collision_mask = 0
+script = ExtResource("6_fu8bx")
 
 [node name="box" parent="." groups=["box"] instance=ExtResource("7_qhrkj")]
 position = Vector2(760, 620)
