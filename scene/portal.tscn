@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://0e33j7bdjbht"]
 
-[ext_resource type="Texture2D" uid="uid://be6py7a7vqk3f" path="res://assents/portal/portal_azul.png" id="1_1crlp"]
+[ext_resource type="Texture2D" uid="uid://be6py7a7vqk3f" path="res://assents/sprints/portal/portal_azul.png" id="1_1crlp"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8dg2p"]
 animations = [{

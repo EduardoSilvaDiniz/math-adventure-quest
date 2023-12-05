@@ -13,6 +13,7 @@ func _on_area_2d_area_entered(area):
 			get_parent().get_node("portal_azul_1").position = Vector2(1280, 400)
 		button_2:
 			print("botão certo")
+	
 
 func _on_area_2d_area_exited(area):
 	match area:

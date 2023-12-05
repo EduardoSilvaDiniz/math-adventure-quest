@@ -21,3 +21,4 @@ func teleporta():
 			get_parent().get_node("player").position = get_parent().get_node("portal_azul_4").position
 		portal_4:
 			get_parent().get_node("player").position = get_parent().get_node("portal_azul_3").position
+	
