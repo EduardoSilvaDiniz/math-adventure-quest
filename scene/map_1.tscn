@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://cebbwm0jt2ykm"]
+[gd_scene load_steps=32 format=3 uid="uid://cebbwm0jt2ykm"]
 
 [ext_resource type="PackedScene" uid="uid://bjrpf78qhxpgu" path="res://scene/button_floor.tscn" id="1_4e7j2"]
 [ext_resource type="Script" path="res://script/map_1.gd" id="1_8ilcx"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b5gaw4hx8qv4w" path="res://scene/gate.tscn" id="4_rhbfd"]
 [ext_resource type="Texture2D" uid="uid://bn13ydfeuee8q" path="res://assents/sprites/map 1/tileset.png" id="4_t6chh"]
 [ext_resource type="PackedScene" uid="uid://b8evg1cdujer5" path="res://scene/button_wall.tscn" id="5_uvgfj"]
+[ext_resource type="Script" path="res://script/gate.gd" id="5_xq6yj"]
 [ext_resource type="Script" path="res://script/button_wall.gd" id="6_fu8bx"]
 [ext_resource type="PackedScene" uid="uid://dqngn24b7unjr" path="res://scene/box.tscn" id="7_qhrkj"]
 [ext_resource type="PackedScene" uid="uid://0e33j7bdjbht" path="res://scene/portal.tscn" id="8_sy4c3"]
@@ -169,8 +170,15 @@ collision_layer = 256
 position = Vector2(2982.67, -12.3334)
 shape = SubResource("RectangleShape2D_hv63n")
 
-[node name="gate" parent="." instance=ExtResource("4_rhbfd")]
+[node name="gate" parent="." groups=["gate"] instance=ExtResource("4_rhbfd")]
 position = Vector2(4216, 605)
+script = ExtResource("5_xq6yj")
+
+[node name="gate2" parent="." groups=["gate"] instance=ExtResource("4_rhbfd")]
+position = Vector2(5336, 605)
+
+[node name="gate3" parent="." groups=["gate"] instance=ExtResource("4_rhbfd")]
+position = Vector2(6440, 602)
 
 [node name="Map" type="TileMap" parent="."]
 position = Vector2(0, -20)
