@@ -25,3 +25,4 @@ func teleporta():
 		portal_4:
 			sound.play()
 			get_parent().get_node("player").position = get_parent().get_node("portal_azul_3").position
+	

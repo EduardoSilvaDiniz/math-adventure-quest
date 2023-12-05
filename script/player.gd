@@ -82,11 +82,11 @@ func _physics_process(delta):
 			move_and_fall(delta, true) # atualiza o player
 	
 	if button_wall and Input.is_key_pressed(KEY_E):
-		get_tree().call_group("wall_button", "fufando")
 		button_wall = false #desligar para não clicar várias vezes o botão
+		get_tree().call_group("wall_button", "fufando")
 	if portal and Input.is_key_pressed(KEY_E) and teleporta:
-		get_tree().call_group("portal", "teleporta")
 		teleporta = false
+		get_tree().call_group("portal", "teleporta")
 		get_node("Timer").start(0.5)
 
 func apply_push_force():
@@ -111,18 +111,13 @@ func is_near_wall():
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("portal"):
 		portal = true
-	if area.is_in_group("wall_button"):
-		print("entrou")
+	elif area.is_in_group("wall_button"):
 		button_wall = true
-	if area.is_in_group("checkpoint1"):
-		print("checkpoint 1")
-		Global.checkpoint = Vector2(1282, 631)
-	if area.is_in_group("checkpoint1"):
-		print("checkpoint 2")
+	elif area.is_in_group("checkpoint1"):
 		Global.checkpoint = Vector2(78, 573)
-	if area.is_in_group("espinho"):
-		dead.play()
-		print("morri")
+	elif area.is_in_group("checkpoint2"):
+		Global.checkpoint = Vector2(1282, 631)
+	elif area.is_in_group("thorn"):
 		position = Global.checkpoint
 	Global.obj = area
 
@@ -132,7 +127,6 @@ func _on_area_2d_area_exited(area):
 	if area.is_in_group("wall_button"):
 		button_wall = false
 	Global.obj = area
-	
 
 func _on_timer_timeout():
 	teleporta = true
