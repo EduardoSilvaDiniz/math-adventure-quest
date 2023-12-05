@@ -119,6 +119,7 @@ func _on_area_2d_area_entered(area):
 		Global.checkpoint = Vector2(1282, 631)
 	elif area.is_in_group("thorn"):
 		position = Global.checkpoint
+		dead.play()
 	Global.obj = area
 
 func _on_area_2d_area_exited(area):

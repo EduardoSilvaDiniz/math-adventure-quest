@@ -1,13 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://0e33j7bdjbht"]
 
-[ext_resource type="Texture2D" uid="uid://be6py7a7vqk3f" path="res://assents/sprites/portal/portal_azul.png" id="1_1crlp"]
 [ext_resource type="AudioStream" uid="uid://dclw68gh0cesl" path="res://assents/sounds/interaction/portal.ogg" id="2_xu3d7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tush1"]
+load_path = "res://.godot/imported/portal_azul.png-905ed729fdfdd05acf61d2dd24af0c03.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8dg2p"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_1crlp")
+"texture": SubResource("CompressedTexture2D_tush1")
 }],
 "loop": true,
 "name": &"default",

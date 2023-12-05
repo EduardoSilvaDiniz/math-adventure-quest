@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://ct7m1opxjpqpl"]
 
 [ext_resource type="Script" path="res://script/Menu.gd" id="1_bg35x"]
-[ext_resource type="Texture2D" uid="uid://70q0tojj2520" path="res://assents/sprites/white square.jpg" id="2_anvqh"]
-[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/Sigmar_One/SigmarOne-Regular.ttf" id="2_vdbve"]
+[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/font/SigmarOne-Regular.ttf" id="2_vdbve"]
+[ext_resource type="Texture2D" uid="uid://cuiedplb7lid5" path="res://assents/sprites/white square.jpg" id="2_x2l45"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -19,7 +19,7 @@ script = ExtResource("1_bg35x")
 modulate = Color(0.223529, 0.392157, 0.690196, 1)
 position = Vector2(636, 360)
 scale = Vector2(1.344, 0.784)
-texture = ExtResource("2_anvqh")
+texture = ExtResource("2_x2l45")
 
 [node name="buttons" type="MarginContainer" parent="."]
 layout_mode = 0

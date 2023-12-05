@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://1n6xs4orpii5"]
 
 [ext_resource type="Script" path="res://script/menu_final.gd" id="1_c13hf"]
-[ext_resource type="Texture2D" uid="uid://0cetacpqmtiq" path="res://assents/sprites/white square.jpg" id="1_kfr2s"]
-[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/sprites/font/Sigmar_One/SigmarOne-Regular.ttf" id="2_1dnng"]
+[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/font/SigmarOne-Regular.ttf" id="2_1dnng"]
+[ext_resource type="Texture2D" uid="uid://cuiedplb7lid5" path="res://assents/sprites/white square.jpg" id="2_x5v0l"]
 
 [node name="menu_final" type="Control"]
 layout_mode = 3
@@ -19,9 +19,10 @@ metadata/_edit_horizontal_guides_ = [359.0]
 modulate = Color(0.176471, 0.552941, 0.611765, 1)
 position = Vector2(639, 362.5)
 scale = Vector2(1.358, 0.791)
-texture = ExtResource("1_kfr2s")
+texture = ExtResource("2_x5v0l")
 
 [node name="button" type="MarginContainer" parent="."]
+layout_mode = 0
 offset_left = 465.0
 offset_top = 362.0
 offset_right = 815.0
@@ -37,6 +38,7 @@ theme_override_font_sizes/font_size = 65
 text = "acorde"
 
 [node name="title" type="Label" parent="."]
+layout_mode = 0
 offset_left = 64.0
 offset_top = 133.0
 offset_right = 1220.0

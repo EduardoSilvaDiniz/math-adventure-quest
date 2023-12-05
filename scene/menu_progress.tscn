@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://corhyrctga8se"]
 
-[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/sprites/font/Sigmar_One/SigmarOne-Regular.ttf" id="1_gma5d"]
+[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/font/SigmarOne-Regular.ttf" id="1_gma5d"]
 [ext_resource type="Script" path="res://script/menu_progress.gd" id="1_orjm1"]
-[ext_resource type="Texture2D" uid="uid://0cetacpqmtiq" path="res://assents/sprites/white square.jpg" id="2_3yxak"]
+[ext_resource type="Texture2D" uid="uid://cuiedplb7lid5" path="res://assents/sprites/white square.jpg" id="2_gc8rd"]
 
 [node name="menu_progress" type="Control"]
 layout_mode = 3
@@ -19,7 +19,7 @@ metadata/_edit_horizontal_guides_ = [359.0]
 modulate = Color(0.211765, 0.176471, 0.427451, 1)
 position = Vector2(639, 362.5)
 scale = Vector2(1.358, 0.791)
-texture = ExtResource("2_3yxak")
+texture = ExtResource("2_gc8rd")
 
 [node name="button" type="MarginContainer" parent="."]
 layout_mode = 0

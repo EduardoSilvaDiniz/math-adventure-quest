@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5gaw4hx8qv4w"]
+
+[ext_resource type="Texture2D" uid="uid://cuiedplb7lid5" path="res://assents/sprites/white square.jpg" id="1_t23ax"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o3l7e"]
+size = Vector2(1000.01, 1000)
+
+[node name="gate" type="Node2D"]
+
+[node name="gate" type="Sprite2D" parent="."]
+modulate = Color(0.25098, 0.25098, 0.25098, 1)
+scale = Vector2(0.0480003, 0.126)
+texture = ExtResource("1_t23ax")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="gate"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gate/StaticBody2D"]
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_o3l7e")

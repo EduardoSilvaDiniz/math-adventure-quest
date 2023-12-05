@@ -1,28 +1,34 @@
 [gd_scene load_steps=12 format=3 uid="uid://b3mjn0718qqhw"]
 
 [ext_resource type="Script" path="res://script/player.gd" id="1_fb8y7"]
-[ext_resource type="Texture2D" uid="uid://8nc1gjjpwoi" path="res://assents/sprites/player/Idle (16 x 16).png" id="2_dn1qb"]
-[ext_resource type="Texture2D" uid="uid://bf06b45ye1hoo" path="res://assents/sprites/player/Jump (16 x 16).png" id="3_vfw4j"]
-[ext_resource type="Texture2D" uid="uid://c08v4qrnliof2" path="res://assents/sprites/player/Run (16 x 16).png" id="4_ep4fc"]
 [ext_resource type="AudioStream" uid="uid://brho6sh7kmba" path="res://assents/sounds/player/jump.ogg" id="5_feg5j"]
 [ext_resource type="AudioStream" uid="uid://oa4brkwl5115" path="res://assents/sounds/player/dead.ogg" id="6_a6gvc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_taaby"]
 size = Vector2(26, 28)
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ir278"]
+load_path = "res://.godot/imported/Jump (16 x 16).png-ff9b8b8af429d674c0500cbb448bf41b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t632o"]
+load_path = "res://.godot/imported/Idle (16 x 16).png-ebb76c4601b23642075c69f6c01b785b.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1jlqp"]
+load_path = "res://.godot/imported/Run (16 x 16).png-7b569bc093a353b4256546ea0dccdd72.ctex"
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_hq710"]
-atlas = ExtResource("4_ep4fc")
+atlas = SubResource("CompressedTexture2D_1jlqp")
 region = Rect2(0, 0, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rb7r3"]
-atlas = ExtResource("4_ep4fc")
+atlas = SubResource("CompressedTexture2D_1jlqp")
 region = Rect2(16, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_scn5h"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_vfw4j")
+"texture": SubResource("CompressedTexture2D_ir278")
 }],
 "loop": true,
 "name": &"air",
@@ -30,7 +36,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_dn1qb")
+"texture": SubResource("CompressedTexture2D_t632o")
 }],
 "loop": true,
 "name": &"idle",

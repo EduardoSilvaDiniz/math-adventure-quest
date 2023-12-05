@@ -1,13 +1,15 @@
 [gd_scene load_steps=6 format=3 uid="uid://b8evg1cdujer5"]
 
-[ext_resource type="Texture2D" uid="uid://dsyr5k0qme66y" path="res://assents/sprites/button/button-wall-disable.png" id="1_pbgqr"]
 [ext_resource type="AudioStream" uid="uid://bagyj8e8nv538" path="res://assents/sounds/interaction/button.ogg" id="2_pwlhq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_4unui"]
+load_path = "res://.godot/imported/button-wall-disable.png-5cac5f49349e85583ad76044421959d9.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6gmca"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_pbgqr")
+"texture": SubResource("CompressedTexture2D_4unui")
 }],
 "loop": true,
 "name": &"default",

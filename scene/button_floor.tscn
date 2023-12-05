@@ -1,15 +1,19 @@
 [gd_scene load_steps=7 format=3 uid="uid://bjrpf78qhxpgu"]
 
 [ext_resource type="Script" path="res://script/button_floor.gd" id="1_cjmek"]
-[ext_resource type="Texture2D" uid="uid://crmij11jr4wwk" path="res://assents/sprites/button/button-floor-disable.png" id="1_vvaew"]
-[ext_resource type="Texture2D" uid="uid://qpxcl33kg3u7" path="res://assents/sprites/button/button-floor-enabled.png" id="2_rj217"]
 [ext_resource type="AudioStream" uid="uid://bagyj8e8nv538" path="res://assents/sounds/interaction/button.ogg" id="4_0ft4r"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_ugnjh"]
+load_path = "res://.godot/imported/button-floor-disable.png-a4ea8ff3caf75b11d315cc2d1847788a.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_05a8t"]
+load_path = "res://.godot/imported/button-floor-enabled.png-7b023c61fba6a0b5784767ac6c6a4eaf.ctex"
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fg31y"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_vvaew")
+"texture": SubResource("CompressedTexture2D_ugnjh")
 }],
 "loop": true,
 "name": &"disable",
@@ -17,7 +21,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_rj217")
+"texture": SubResource("CompressedTexture2D_05a8t")
 }],
 "loop": true,
 "name": &"enable",
