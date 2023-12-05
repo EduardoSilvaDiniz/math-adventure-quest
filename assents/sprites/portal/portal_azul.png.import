@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be6py7a7vqk3f"
-<<<<<<<< HEAD:assents/sprites/portal/portal_azul.png.import
+uid="uid://cej2shxkswmgq"
 path="res://.godot/imported/portal_azul.png-905ed729fdfdd05acf61d2dd24af0c03.ctex"
-========
-path="res://.godot/imported/portal_azul.png-0c9631974bd695d2fcef665222898326.ctex"
->>>>>>>> 0.F-dev:assents/sprints/portal/portal_azul.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/portal/portal_azul.png.import
 source_file="res://assents/sprites/portal/portal_azul.png"
 dest_files=["res://.godot/imported/portal_azul.png-905ed729fdfdd05acf61d2dd24af0c03.ctex"]
-========
-source_file="res://assents/sprints/portal/portal_azul.png"
-dest_files=["res://.godot/imported/portal_azul.png-0c9631974bd695d2fcef665222898326.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/portal/portal_azul.png.import
 
 [params]
 

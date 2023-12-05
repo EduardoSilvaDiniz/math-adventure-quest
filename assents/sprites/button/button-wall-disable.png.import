@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsyr5k0qme66y"
-<<<<<<<< HEAD:assents/sprites/button/button-wall-disable.png.import
+uid="uid://ca700umsxkhcl"
 path="res://.godot/imported/button-wall-disable.png-5cac5f49349e85583ad76044421959d9.ctex"
-========
-path="res://.godot/imported/button-wall-disable.png-09e885d6cdf444407863f63e61e08f5a.ctex"
->>>>>>>> 0.F-dev:assents/sprints/button/button-wall-disable.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/button/button-wall-disable.png.import
 source_file="res://assents/sprites/button/button-wall-disable.png"
 dest_files=["res://.godot/imported/button-wall-disable.png-5cac5f49349e85583ad76044421959d9.ctex"]
-========
-source_file="res://assents/sprints/button/button-wall-disable.png"
-dest_files=["res://.godot/imported/button-wall-disable.png-09e885d6cdf444407863f63e61e08f5a.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/button/button-wall-disable.png.import
 
 [params]
 

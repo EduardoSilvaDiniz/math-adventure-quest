@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c08v4qrnliof2"
-<<<<<<<< HEAD:assents/sprites/player/Run (16 x 16).png.import
+uid="uid://jvrh46culuov"
 path="res://.godot/imported/Run (16 x 16).png-7b569bc093a353b4256546ea0dccdd72.ctex"
-========
-path="res://.godot/imported/Run (16 x 16).png-dd47473f2d58797ea0fc28f8cf4e9826.ctex"
->>>>>>>> 0.F-dev:assents/sprints/player/Run (16 x 16).png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/player/Run (16 x 16).png.import
 source_file="res://assents/sprites/player/Run (16 x 16).png"
 dest_files=["res://.godot/imported/Run (16 x 16).png-7b569bc093a353b4256546ea0dccdd72.ctex"]
-========
-source_file="res://assents/sprints/player/Run (16 x 16).png"
-dest_files=["res://.godot/imported/Run (16 x 16).png-dd47473f2d58797ea0fc28f8cf4e9826.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/player/Run (16 x 16).png.import
 
 [params]
 

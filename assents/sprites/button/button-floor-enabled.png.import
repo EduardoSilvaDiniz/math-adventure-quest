@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://df026lda2r0i5"
-<<<<<<<< HEAD:assents/sprites/button/button-floor-enabled.png.import
+uid="uid://qpxcl33kg3u7"
 path="res://.godot/imported/button-floor-enabled.png-7b023c61fba6a0b5784767ac6c6a4eaf.ctex"
-========
-path="res://.godot/imported/button-floor-enabled.png-ebc17382ef6ec8a72d5003dd810847a2.ctex"
->>>>>>>> 0.F-dev:assents/sprints/button/button-floor-enabled.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/button/button-floor-enabled.png.import
 source_file="res://assents/sprites/button/button-floor-enabled.png"
 dest_files=["res://.godot/imported/button-floor-enabled.png-7b023c61fba6a0b5784767ac6c6a4eaf.ctex"]
-========
-source_file="res://assents/sprints/button/button-floor-enabled.png"
-dest_files=["res://.godot/imported/button-floor-enabled.png-ebc17382ef6ec8a72d5003dd810847a2.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/button/button-floor-enabled.png.import
 
 [params]
 

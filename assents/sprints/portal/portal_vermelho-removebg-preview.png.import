@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bftncu6xsq50x"
-<<<<<<<< HEAD:assents/sprites/portal/portal_vermelho-removebg-preview.png.import
-path="res://.godot/imported/portal_vermelho-removebg-preview.png-36095d37af1ec1033084b76e4af2a534.ctex"
-========
+uid="uid://bvu1dhf6p7s64"
 path="res://.godot/imported/portal_vermelho-removebg-preview.png-9268315c610f2fa826cd007ffbb6aac9.ctex"
->>>>>>>> 0.F-dev:assents/sprints/portal/portal_vermelho-removebg-preview.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/portal/portal_vermelho-removebg-preview.png.import
-source_file="res://assents/sprites/portal/portal_vermelho-removebg-preview.png"
-dest_files=["res://.godot/imported/portal_vermelho-removebg-preview.png-36095d37af1ec1033084b76e4af2a534.ctex"]
-========
 source_file="res://assents/sprints/portal/portal_vermelho-removebg-preview.png"
 dest_files=["res://.godot/imported/portal_vermelho-removebg-preview.png-9268315c610f2fa826cd007ffbb6aac9.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/portal/portal_vermelho-removebg-preview.png.import
 
 [params]
 

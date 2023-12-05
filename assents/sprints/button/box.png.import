@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://disr8uhntan55"
-<<<<<<<< HEAD:assents/sprites/button/box.png.import
-path="res://.godot/imported/box.png-64d7550f10664a10d0647af82b6966ef.ctex"
-========
+uid="uid://df04khtxms4ry"
 path="res://.godot/imported/box.png-75f06da8a0b076557414d4f70a91b291.ctex"
->>>>>>>> 0.F-dev:assents/sprints/button/box.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/button/box.png.import
-source_file="res://assents/sprites/button/box.png"
-dest_files=["res://.godot/imported/box.png-64d7550f10664a10d0647af82b6966ef.ctex"]
-========
 source_file="res://assents/sprints/button/box.png"
 dest_files=["res://.godot/imported/box.png-75f06da8a0b076557414d4f70a91b291.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/button/box.png.import
 
 [params]
 

@@ -1,22 +1,20 @@
-[gd_scene load_steps=30 format=3 uid="uid://cebbwm0jt2ykm"]
+[gd_scene load_steps=28 format=3 uid="uid://cebbwm0jt2ykm"]
 
-[ext_resource type="Script" path="res://script/map1.gd" id="1_ca7v1"]
 [ext_resource type="PackedScene" uid="uid://b3mjn0718qqhw" path="res://scene/player.tscn" id="1_owc8w"]
 [ext_resource type="PackedScene" uid="uid://0e33j7bdjbht" path="res://scene/portal.tscn" id="3_1a1ko"]
 [ext_resource type="Script" path="res://script/portal_azul.gd" id="3_6cq7k"]
 [ext_resource type="Script" path="res://script/button_wall.gd" id="3_xsfxf"]
-[ext_resource type="Texture2D" uid="uid://doffpikfvs2vc" path="res://assents/sprites/thorn/thorn.png" id="4_3md84"]
+[ext_resource type="Texture2D" uid="uid://b0be8l7112s0f" path="res://assents/sprints/thorn/thorn.png" id="4_3md84"]
 [ext_resource type="PackedScene" uid="uid://bjrpf78qhxpgu" path="res://scene/button_floor.tscn" id="4_ekfnf"]
 [ext_resource type="PackedScene" uid="uid://b8evg1cdujer5" path="res://scene/button_wall.tscn" id="5_q5535"]
 [ext_resource type="PackedScene" uid="uid://dqngn24b7unjr" path="res://scene/box.tscn" id="6_b0w1e"]
-[ext_resource type="Texture2D" uid="uid://myn4b3331w4w" path="res://assents/sprites/map 1/tileset.png" id="6_q4li3"]
-[ext_resource type="Texture2D" uid="uid://b2swnxeuofphc" path="res://assents/sprites/map 1/back.png" id="8_qg5xb"]
-[ext_resource type="Shader" path="res://assents/sprites/shader/background_move.gdshader" id="8_xyoh4"]
-[ext_resource type="Texture2D" uid="uid://bxj4inrstm5ay" path="res://assents/sprites/map 1/middle.png" id="9_reblk"]
-[ext_resource type="Texture2D" uid="uid://de4fb6l8n51lr" path="res://assents/sprites/map 1/near.png" id="10_e08w4"]
-[ext_resource type="Texture2D" uid="uid://0cetacpqmtiq" path="res://assents/sprites/white square.jpg" id="12_0dwft"]
-[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/sprites/font/Sigmar_One/SigmarOne-Regular.ttf" id="12_wav3f"]
-[ext_resource type="AudioStream" uid="uid://dw6v2naknmghk" path="res://assents/sounds/music/map1.ogg" id="16_le7bc"]
+[ext_resource type="Texture2D" uid="uid://bn13ydfeuee8q" path="res://assents/sprints/map 1/tileset.png" id="6_q4li3"]
+[ext_resource type="Texture2D" uid="uid://j7dwfryfdv3v" path="res://assents/sprints/map 1/back.png" id="8_qg5xb"]
+[ext_resource type="Shader" path="res://assents/sprints/shader/background_move.gdshader" id="8_xyoh4"]
+[ext_resource type="Texture2D" uid="uid://blpftjg65p5j2" path="res://assents/sprints/map 1/middle.png" id="9_reblk"]
+[ext_resource type="Texture2D" uid="uid://bd1dewuods36i" path="res://assents/sprints/map 1/near.png" id="10_e08w4"]
+[ext_resource type="Texture2D" uid="uid://cuiedplb7lid5" path="res://assents/sprints/white square.jpg" id="12_0dwft"]
+[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/Sigmar_One/SigmarOne-Regular.ttf" id="12_wav3f"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hv63n"]
 size = Vector2(216.667, 223.333)
@@ -96,7 +94,6 @@ size = Vector2(20, 594)
 size = Vector2(6688, 39)
 
 [node name="map1" type="Node2D"]
-script = ExtResource("1_ca7v1")
 
 [node name="buttonFloor_false" parent="." groups=["floor_button"] instance=ExtResource("4_ekfnf")]
 position = Vector2(604, 640)
@@ -306,11 +303,7 @@ position = Vector2(2529, 589)
 shape = SubResource("RectangleShape2D_4sosf")
 
 [node name="player" parent="." groups=["player"] instance=ExtResource("1_owc8w")]
-<<<<<<< HEAD
-position = Vector2(4326, 619)
-=======
 position = Vector2(4074, 575)
->>>>>>> 0.F-dev
 collision_mask = 14
 
 [node name="camera" type="Camera2D" parent="player"]
@@ -502,12 +495,7 @@ offset_top = 545.0
 offset_right = 4461.0
 offset_bottom = 611.0
 theme_override_font_sizes/font_size = 35
-<<<<<<< HEAD
-text = "5
-"
-=======
 text = "-1"
->>>>>>> 0.F-dev
 label_settings = SubResource("LabelSettings_5sd8w")
 horizontal_alignment = 1
 
@@ -588,7 +576,8 @@ offset_top = 341.0
 offset_right = 5591.0
 offset_bottom = 407.0
 theme_override_font_sizes/font_size = 35
-text = "10"
+text = "-1
+"
 label_settings = SubResource("LabelSettings_5sd8w")
 horizontal_alignment = 1
 
@@ -604,11 +593,7 @@ offset_top = 536.0
 offset_right = 5588.0
 offset_bottom = 602.0
 theme_override_font_sizes/font_size = 35
-<<<<<<< HEAD
-text = "7"
-=======
 text = "11"
->>>>>>> 0.F-dev
 label_settings = SubResource("LabelSettings_5sd8w")
 horizontal_alignment = 1
 
@@ -624,7 +609,7 @@ offset_top = 382.0
 offset_right = 6179.0
 offset_bottom = 448.0
 theme_override_font_sizes/font_size = 35
-text = "4"
+text = "2"
 label_settings = SubResource("LabelSettings_5sd8w")
 horizontal_alignment = 1
 
@@ -640,24 +625,24 @@ offset_top = 545.0
 offset_right = 6181.0
 offset_bottom = 611.0
 theme_override_font_sizes/font_size = 35
-text = "2"
+text = "1"
 label_settings = SubResource("LabelSettings_5sd8w")
 horizontal_alignment = 1
 
 [node name="WhiteSquare18" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.588235)
-position = Vector2(5861.5, 342.12)
-scale = Vector2(0.453, 0.13624)
+position = Vector2(5858.5, 344.12)
+scale = Vector2(0.433, 0.13624)
 texture = ExtResource("12_0dwft")
 
 [node name="Label18" type="Label" parent="."]
-offset_left = 5643.0
-offset_top = 277.0
-offset_right = 5870.0
-offset_bottom = 343.0
+offset_left = 5650.0
+offset_top = 279.0
+offset_right = 5864.0
+offset_bottom = 345.0
 scale = Vector2(1.96027, 1.96027)
 theme_override_font_sizes/font_size = 35
-text = "4 + ? - 2 = 6"
+text = "3 + 1 - 2 = ?"
 label_settings = SubResource("LabelSettings_5sd8w")
 horizontal_alignment = 1
 
@@ -687,15 +672,6 @@ collision_layer = 2
 position = Vector2(3344, -20)
 shape = SubResource("RectangleShape2D_r8uyv")
 
-<<<<<<< HEAD
-[node name="music" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("16_le7bc")
-volume_db = -20.0
-autoplay = true
-
-[connection signal="area_entered" from="Thorn/espinho" to="player" method="_on_espinho_area_entered"]
-=======
->>>>>>> 0.F-dev
 [connection signal="area_entered" from="box/Area2D" to="buttonFloor_true" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="box/Area2D" to="buttonFloor_true" method="_on_area_2d_area_exited"]
 [connection signal="area_entered" from="box2/Area2D" to="buttonFloor_true" method="_on_area_2d_area_entered"]
@@ -703,4 +679,3 @@ autoplay = true
 [connection signal="area_entered" from="box3/Area2D" to="buttonFloor_true" method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="box3/Area2D" to="buttonFloor_true" method="_on_area_2d_area_exited"]
 [connection signal="timeout" from="player/Timer" to="player" method="_on_timer_timeout"]
-[connection signal="finished" from="music" to="." method="_on_music_finished"]

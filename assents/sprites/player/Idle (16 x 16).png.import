@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8nc1gjjpwoi"
-<<<<<<<< HEAD:assents/sprites/player/Idle (16 x 16).png.import
+uid="uid://oosimk00l0kc"
 path="res://.godot/imported/Idle (16 x 16).png-ebb76c4601b23642075c69f6c01b785b.ctex"
-========
-path="res://.godot/imported/Idle (16 x 16).png-d0c08eab38899d38f95badcbd3a403ac.ctex"
->>>>>>>> 0.F-dev:assents/sprints/player/Idle (16 x 16).png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/player/Idle (16 x 16).png.import
 source_file="res://assents/sprites/player/Idle (16 x 16).png"
 dest_files=["res://.godot/imported/Idle (16 x 16).png-ebb76c4601b23642075c69f6c01b785b.ctex"]
-========
-source_file="res://assents/sprints/player/Idle (16 x 16).png"
-dest_files=["res://.godot/imported/Idle (16 x 16).png-d0c08eab38899d38f95badcbd3a403ac.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/player/Idle (16 x 16).png.import
 
 [params]
 

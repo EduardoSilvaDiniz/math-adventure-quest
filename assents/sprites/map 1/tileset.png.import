@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://myn4b3331w4w"
-<<<<<<<< HEAD:assents/sprites/map 1/tileset.png.import
+uid="uid://cbgrph30wovdu"
 path="res://.godot/imported/tileset.png-8f990e8e59892a34c74d2e7fde9ac8bb.ctex"
-========
-path="res://.godot/imported/tileset.png-65b5eaa47d20549e920ca0385e24f0b6.ctex"
->>>>>>>> 0.F-dev:assents/sprints/map 1/tileset.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/map 1/tileset.png.import
 source_file="res://assents/sprites/map 1/tileset.png"
 dest_files=["res://.godot/imported/tileset.png-8f990e8e59892a34c74d2e7fde9ac8bb.ctex"]
-========
-source_file="res://assents/sprints/map 1/tileset.png"
-dest_files=["res://.godot/imported/tileset.png-65b5eaa47d20549e920ca0385e24f0b6.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/map 1/tileset.png.import
 
 [params]
 

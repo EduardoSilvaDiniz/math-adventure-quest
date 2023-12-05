@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de4fb6l8n51lr"
-<<<<<<<< HEAD:assents/sprites/map 1/near.png.import
-path="res://.godot/imported/near.png-d7516761c231d05600970942e2ac9a5e.ctex"
-========
+uid="uid://bd1dewuods36i"
 path="res://.godot/imported/near.png-1706feb2188d42f2dfb8d08b3d8e07d2.ctex"
->>>>>>>> 0.F-dev:assents/sprints/map 1/near.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/map 1/near.png.import
-source_file="res://assents/sprites/map 1/near.png"
-dest_files=["res://.godot/imported/near.png-d7516761c231d05600970942e2ac9a5e.ctex"]
-========
 source_file="res://assents/sprints/map 1/near.png"
 dest_files=["res://.godot/imported/near.png-1706feb2188d42f2dfb8d08b3d8e07d2.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/map 1/near.png.import
 
 [params]
 

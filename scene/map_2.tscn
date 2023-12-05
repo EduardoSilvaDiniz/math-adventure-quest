@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://uklexlcas4ak"]
 
-[ext_resource type="Texture2D" uid="uid://kfpm53kqvpbs" path="res://assents/sprites/map 2/tiles.png" id="1_55blh"]
-[ext_resource type="Texture2D" uid="uid://doa8rbs1o8jnc" path="res://assents/sprites/map 2/background.png" id="1_efy04"]
-[ext_resource type="Texture2D" uid="uid://8whsftd4lbfy" path="res://assents/sprites/map 2/back-walls.png" id="2_l206w"]
+[ext_resource type="Texture2D" uid="uid://byvrhiwecno1l" path="res://assents/sprites/map 2/tiles.png" id="1_55blh"]
+[ext_resource type="Texture2D" uid="uid://cd402mlcljdo" path="res://assents/sprites/map 2/background.png" id="1_efy04"]
+[ext_resource type="Texture2D" uid="uid://dr8qfg070e0n6" path="res://assents/sprites/map 2/back-walls.png" id="2_l206w"]
 [ext_resource type="PackedScene" uid="uid://b3mjn0718qqhw" path="res://scene/player.tscn" id="4_r33jr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ad18"]

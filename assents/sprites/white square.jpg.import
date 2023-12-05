@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://0cetacpqmtiq"
-<<<<<<<< HEAD:assents/sprites/white square.jpg.import
+uid="uid://70q0tojj2520"
 path="res://.godot/imported/white square.jpg-b8b30fedc52dccbfb065f4d6e3f9dfeb.ctex"
-========
-path="res://.godot/imported/white square.jpg-0d1995af78238e87b2b994f99b3e8f7c.ctex"
->>>>>>>> 0.F-dev:assents/sprints/white square.jpg.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/white square.jpg.import
 source_file="res://assents/sprites/white square.jpg"
 dest_files=["res://.godot/imported/white square.jpg-b8b30fedc52dccbfb065f4d6e3f9dfeb.ctex"]
-========
-source_file="res://assents/sprints/white square.jpg"
-dest_files=["res://.godot/imported/white square.jpg-0d1995af78238e87b2b994f99b3e8f7c.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/white square.jpg.import
 
 [params]
 

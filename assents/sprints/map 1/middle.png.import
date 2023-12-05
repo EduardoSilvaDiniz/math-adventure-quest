@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxj4inrstm5ay"
-<<<<<<<< HEAD:assents/sprites/map 1/middle.png.import
-path="res://.godot/imported/middle.png-2ee8020eb5d40c9311697811cd093301.ctex"
-========
+uid="uid://blpftjg65p5j2"
 path="res://.godot/imported/middle.png-9b2b14e3dd74c778dd05d907d0641e0d.ctex"
->>>>>>>> 0.F-dev:assents/sprints/map 1/middle.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/map 1/middle.png.import
-source_file="res://assents/sprites/map 1/middle.png"
-dest_files=["res://.godot/imported/middle.png-2ee8020eb5d40c9311697811cd093301.ctex"]
-========
 source_file="res://assents/sprints/map 1/middle.png"
 dest_files=["res://.godot/imported/middle.png-9b2b14e3dd74c778dd05d907d0641e0d.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/map 1/middle.png.import
 
 [params]
 

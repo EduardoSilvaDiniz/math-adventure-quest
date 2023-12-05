@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://doffpikfvs2vc"
-<<<<<<<< HEAD:assents/sprites/thorn/thorn.png.import
-path="res://.godot/imported/thorn.png-ad49bc0ce1e56258a0a69887aec2891d.ctex"
-========
+uid="uid://b0be8l7112s0f"
 path="res://.godot/imported/thorn.png-d38e4413abee14482ebfc9169df016fd.ctex"
->>>>>>>> 0.F-dev:assents/sprints/thorn/thorn.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/thorn/thorn.png.import
-source_file="res://assents/sprites/thorn/thorn.png"
-dest_files=["res://.godot/imported/thorn.png-ad49bc0ce1e56258a0a69887aec2891d.ctex"]
-========
 source_file="res://assents/sprints/thorn/thorn.png"
 dest_files=["res://.godot/imported/thorn.png-d38e4413abee14482ebfc9169df016fd.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/thorn/thorn.png.import
 
 [params]
 

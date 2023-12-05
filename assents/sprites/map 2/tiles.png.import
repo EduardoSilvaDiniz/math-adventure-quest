@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kfpm53kqvpbs"
-<<<<<<<< HEAD:assents/sprites/map 2/tiles.png.import
+uid="uid://byvrhiwecno1l"
 path="res://.godot/imported/tiles.png-42e874f4b3ac0951c7dc12869398d885.ctex"
-========
-path="res://.godot/imported/tiles.png-dfe35bedcf0780a288f6670ad4cc11c0.ctex"
->>>>>>>> 0.F-dev:assents/sprints/map 2/tiles.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/map 2/tiles.png.import
 source_file="res://assents/sprites/map 2/tiles.png"
 dest_files=["res://.godot/imported/tiles.png-42e874f4b3ac0951c7dc12869398d885.ctex"]
-========
-source_file="res://assents/sprints/map 2/tiles.png"
-dest_files=["res://.godot/imported/tiles.png-dfe35bedcf0780a288f6670ad4cc11c0.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/map 2/tiles.png.import
 
 [params]
 

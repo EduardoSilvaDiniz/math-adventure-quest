@@ -12,6 +12,6 @@ func fufando():
 	match Global.obj:
 		button_1:
 			print("funcionando 1")
-	sound.play()
 		button_2:
 			print("funcionando 2")
+	sound.play()

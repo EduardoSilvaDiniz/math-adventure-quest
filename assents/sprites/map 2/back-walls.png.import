@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8whsftd4lbfy"
-<<<<<<<< HEAD:assents/sprites/map 2/back-walls.png.import
+uid="uid://dr8qfg070e0n6"
 path="res://.godot/imported/back-walls.png-3ca5e09f42a33881e8e9c33bfc03419b.ctex"
-========
-path="res://.godot/imported/back-walls.png-b116bcea116eb374344ef823a01523c9.ctex"
->>>>>>>> 0.F-dev:assents/sprints/map 2/back-walls.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/map 2/back-walls.png.import
 source_file="res://assents/sprites/map 2/back-walls.png"
 dest_files=["res://.godot/imported/back-walls.png-3ca5e09f42a33881e8e9c33bfc03419b.ctex"]
-========
-source_file="res://assents/sprints/map 2/back-walls.png"
-dest_files=["res://.godot/imported/back-walls.png-b116bcea116eb374344ef823a01523c9.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/map 2/back-walls.png.import
 
 [params]
 

@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bspdnpaftut23"
-<<<<<<<< HEAD:assents/sprites/player/Blink (16 x 16).png.import
+uid="uid://cjokyfuijtfdi"
 path="res://.godot/imported/Blink (16 x 16).png-65beb77bd37bda7b0ff95421d4f3edc9.ctex"
-========
-path="res://.godot/imported/Blink (16 x 16).png-02a67b42fec1bc307275cc47ea776f44.ctex"
->>>>>>>> 0.F-dev:assents/sprints/player/Blink (16 x 16).png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/player/Blink (16 x 16).png.import
 source_file="res://assents/sprites/player/Blink (16 x 16).png"
 dest_files=["res://.godot/imported/Blink (16 x 16).png-65beb77bd37bda7b0ff95421d4f3edc9.ctex"]
-========
-source_file="res://assents/sprints/player/Blink (16 x 16).png"
-dest_files=["res://.godot/imported/Blink (16 x 16).png-02a67b42fec1bc307275cc47ea776f44.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/player/Blink (16 x 16).png.import
 
 [params]
 

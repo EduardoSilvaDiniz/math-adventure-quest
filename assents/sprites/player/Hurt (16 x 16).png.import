@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqfc27mwbsa6l"
-<<<<<<<< HEAD:assents/sprites/player/Hurt (16 x 16).png.import
+uid="uid://crnrub25uweja"
 path="res://.godot/imported/Hurt (16 x 16).png-17135ad957269117bf406a5cc187a8c1.ctex"
-========
-path="res://.godot/imported/Hurt (16 x 16).png-213e63d544a5557ce0211762031e9ee7.ctex"
->>>>>>>> 0.F-dev:assents/sprints/player/Hurt (16 x 16).png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< HEAD:assents/sprites/player/Hurt (16 x 16).png.import
 source_file="res://assents/sprites/player/Hurt (16 x 16).png"
 dest_files=["res://.godot/imported/Hurt (16 x 16).png-17135ad957269117bf406a5cc187a8c1.ctex"]
-========
-source_file="res://assents/sprints/player/Hurt (16 x 16).png"
-dest_files=["res://.godot/imported/Hurt (16 x 16).png-213e63d544a5557ce0211762031e9ee7.ctex"]
->>>>>>>> 0.F-dev:assents/sprints/player/Hurt (16 x 16).png.import
 
 [params]
 
