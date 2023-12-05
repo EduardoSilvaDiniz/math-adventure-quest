@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dqngn24b7unjr"]
 
-[ext_resource type="Texture2D" uid="uid://dstdp2rjs30ag" path="res://assents/sprites/button/box.png" id="1_s7qo5"]
+[ext_resource type="Texture2D" uid="uid://df04khtxms4ry" path="res://assents/sprites/button/box.png" id="1_s7qo5"]
 [ext_resource type="Script" path="res://script/box.gd" id="1_xisg1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ewfr3"]

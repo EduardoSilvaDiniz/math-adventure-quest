@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://1n6xs4orpii5"]
+[gd_scene load_steps=4 format=3 uid="uid://cvr0hoxks4ymf"]
 
 [ext_resource type="Script" path="res://script/menu_final.gd" id="1_c13hf"]
 [ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/font/SigmarOne-Regular.ttf" id="2_1dnng"]

@@ -110,21 +110,30 @@ func is_near_wall():
 	return wallchacker.is_colliding()
 
 func _on_area_2d_area_entered(area):
+	Global.obj = area
 	if area.is_in_group("portal") and portal == false:
 		portal = true
 		get_tree().call_group("portal", "KeyE")
 	elif area.is_in_group("wall_button"):
 		button_wall = true
+		get_tree().call_group("wall_button", "KeyE")
 	elif area.is_in_group("checkpoint1"):
 		Global.checkpoint = Vector2(78, 573)
 	elif area.is_in_group("checkpoint2"):
 		Global.checkpoint = Vector2(1282, 631)
+	elif area.is_in_group("checkpoint3"):
+		Global.checkpoint = Vector2(9, 85)
+	elif area.is_in_group("checkpoint4"):
+		Global.checkpoint = Vector2(1072, 551)
+	elif area.is_in_group("checkpoint5"):
+		Global.checkpoint = Vector2(3708, 519)
 	elif area.is_in_group("thorn"):
 		position = Global.checkpoint
 		dead.play()
 	elif area.is_in_group("victory"):
 		get_tree().change_scene_to_file("res://scene/menu_progress.tscn")
-	Global.obj = area
+	elif area.is_in_group("victory2"):
+		get_tree().change_scene_to_file("res://scene/menu_final.tscn")
 
 func _on_area_2d_area_exited(area):
 	if area.is_in_group("portal"):
@@ -132,6 +141,7 @@ func _on_area_2d_area_exited(area):
 		get_tree().call_group("portal", "KeyE_hidden")
 	if area.is_in_group("wall_button"):
 		button_wall = false
+		get_tree().call_group("wall_button", "KeyE_hidden")
 	Global.obj = area
 
 func _on_timer_timeout():
