@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://corhyrctga8se"]
+
+[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/font/Sigmar_One/SigmarOne-Regular.ttf" id="1_gma5d"]
+[ext_resource type="Script" path="res://script/menu_progress.gd" id="1_orjm1"]
+[ext_resource type="Texture2D" uid="uid://0cetacpqmtiq" path="res://assents/white square.jpg" id="2_3yxak"]
+
+[node name="menu_progress" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_orjm1")
+metadata/_edit_vertical_guides_ = [639.0]
+metadata/_edit_horizontal_guides_ = [359.0]
+
+[node name="background" type="Sprite2D" parent="."]
+modulate = Color(0.211765, 0.176471, 0.427451, 1)
+position = Vector2(639, 362.5)
+scale = Vector2(1.358, 0.791)
+texture = ExtResource("2_3yxak")
+
+[node name="button" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 437.0
+offset_top = 358.0
+offset_right = 837.0
+offset_bottom = 478.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="button"]
+layout_mode = 2
+
+[node name="continue" type="Button" parent="button/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_gma5d")
+theme_override_font_sizes/font_size = 65
+text = "continue"
+
+[node name="title" type="Label" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 112.0
+offset_right = 1271.0
+offset_bottom = 233.0
+theme_override_fonts/font = ExtResource("1_gma5d")
+theme_override_font_sizes/font_size = 35
+text = "Matt enfrenta desafios de adição e subtração, 
+mas mal sabe ele que terá que enfrentar mais dois desafios."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="button/VBoxContainer/continue" to="." method="_on_continue_pressed"]
