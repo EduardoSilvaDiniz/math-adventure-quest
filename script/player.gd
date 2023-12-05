@@ -5,14 +5,14 @@ const SPEED = 220.0
 const RUNSPEED = 400.0
 const JUMP_VELOCITY = -400.0
 
-
 var playerState = STATES.AIR # inicia o jogo com o situação do player AIR ou estar no ar/voando/pulando
 var playerOnButton = false # troca para TRUE se o jogador se aproximar do botão
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction = 1
 @onready var animation := $sprite as AnimatedSprite2D # variavel para manipular a sprite do player
 @onready var wallchacker := $wallchecker as RayCast2D
-
+@onready var jump := $jump as AudioStreamPlayer2D
+@onready var dead := $dead as AudioStreamPlayer2D
 var button_wall = false #confere se o botão da parede está sendo tocado
 var portal = false #confere se o portal está sendo tocado
 var teleporta = true #para não ficar teleportando toda hora
@@ -61,6 +61,7 @@ func _physics_process(delta):
 				animation.play("idle") # muda a sprite para parado
 				
 			if Input.is_action_pressed("jump"): # se o player aperta espaço
+				jump.play()
 				velocity.y = JUMP_VELOCITY # pula
 				playerState = STATES.AIR # e muda a situação para AIR, pulando
 			if not is_on_floor():
@@ -74,7 +75,8 @@ func _physics_process(delta):
 				playerState = STATES.FLOOR
 			elif not is_near_wall():
 				playerState = STATES.AIR
-			if Input.is_action_pressed("ui_accept") and ((Input.is_action_pressed("ui_left") and direction == 1) or (Input.is_action_pressed("ui_right") and direction == -1)):
+			if Input.is_action_pressed("jump") and ((Input.is_action_pressed("ui_left") and direction == 1) or (Input.is_action_pressed("ui_right") and direction == -1)):
+				jump.play()
 				velocity.x = 450 * -direction
 				velocity.y = JUMP_VELOCITY * 0.7
 			move_and_fall(delta, true) # atualiza o player
@@ -119,6 +121,7 @@ func _on_area_2d_area_entered(area):
 		print("checkpoint 2")
 		Global.checkpoint = Vector2(78, 573)
 	if area.is_in_group("espinho"):
+		dead.play()
 		print("morri")
 		position = Global.checkpoint
 	Global.obj = area

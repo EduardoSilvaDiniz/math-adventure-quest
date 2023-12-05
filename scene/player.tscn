@@ -1,9 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://b3mjn0718qqhw"]
+[gd_scene load_steps=12 format=3 uid="uid://b3mjn0718qqhw"]
 
 [ext_resource type="Script" path="res://script/player.gd" id="1_fb8y7"]
-[ext_resource type="Texture2D" uid="uid://8nc1gjjpwoi" path="res://assents/player/Idle (16 x 16).png" id="2_dn1qb"]
-[ext_resource type="Texture2D" uid="uid://bf06b45ye1hoo" path="res://assents/player/Jump (16 x 16).png" id="3_vfw4j"]
-[ext_resource type="Texture2D" uid="uid://c08v4qrnliof2" path="res://assents/player/Run (16 x 16).png" id="4_ep4fc"]
+[ext_resource type="Texture2D" uid="uid://8nc1gjjpwoi" path="res://assents/sprites/player/Idle (16 x 16).png" id="2_dn1qb"]
+[ext_resource type="Texture2D" uid="uid://bf06b45ye1hoo" path="res://assents/sprites/player/Jump (16 x 16).png" id="3_vfw4j"]
+[ext_resource type="Texture2D" uid="uid://c08v4qrnliof2" path="res://assents/sprites/player/Run (16 x 16).png" id="4_ep4fc"]
+[ext_resource type="AudioStream" uid="uid://brho6sh7kmba" path="res://assents/sounds/player/jump.ogg" id="5_feg5j"]
+[ext_resource type="AudioStream" uid="uid://oa4brkwl5115" path="res://assents/sounds/player/dead.ogg" id="6_a6gvc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_taaby"]
 size = Vector2(26, 28)
@@ -82,6 +84,12 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0, 1)
 shape = SubResource("RectangleShape2D_oax5p")
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_feg5j")
+
+[node name="dead" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_a6gvc")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

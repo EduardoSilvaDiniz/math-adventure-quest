@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b8evg1cdujer5"]
+[gd_scene load_steps=6 format=3 uid="uid://b8evg1cdujer5"]
 
-[ext_resource type="Texture2D" uid="uid://dsyr5k0qme66y" path="res://assents/button/button-wall-disable.png" id="1_pbgqr"]
+[ext_resource type="Texture2D" uid="uid://dsyr5k0qme66y" path="res://assents/sprites/button/button-wall-disable.png" id="1_pbgqr"]
+[ext_resource type="AudioStream" uid="uid://bagyj8e8nv538" path="res://assents/sounds/interaction/button.ogg" id="2_pwlhq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6gmca"]
 animations = [{
@@ -33,3 +34,6 @@ collision_layer = 16
 
 [node name="collision" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_tmwp6")
+
+[node name="sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_pwlhq")

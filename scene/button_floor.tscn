@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjrpf78qhxpgu"]
+[gd_scene load_steps=7 format=3 uid="uid://bjrpf78qhxpgu"]
 
 [ext_resource type="Script" path="res://script/button_floor.gd" id="1_cjmek"]
-[ext_resource type="Texture2D" uid="uid://gbtx6ik84tro" path="res://assents/button/button-floor-disable.png" id="1_vvaew"]
-[ext_resource type="Texture2D" uid="uid://df026lda2r0i5" path="res://assents/button/button-floor-enabled.png" id="2_rj217"]
+[ext_resource type="Texture2D" uid="uid://gbtx6ik84tro" path="res://assents/sprites/button/button-floor-disable.png" id="1_vvaew"]
+[ext_resource type="Texture2D" uid="uid://df026lda2r0i5" path="res://assents/sprites/button/button-floor-enabled.png" id="2_rj217"]
+[ext_resource type="AudioStream" uid="uid://bagyj8e8nv538" path="res://assents/sounds/interaction/button.ogg" id="4_0ft4r"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_fg31y"]
 animations = [{
@@ -41,3 +42,6 @@ collision_mask = 4
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-2, 1.33331)
 shape = SubResource("RectangleShape2D_oail2")
+
+[node name="sound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_0ft4r")
