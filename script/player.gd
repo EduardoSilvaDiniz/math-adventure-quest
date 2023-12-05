@@ -87,6 +87,7 @@ func _physics_process(delta):
 	if portal and Input.is_key_pressed(KEY_E) and teleporta:
 		teleporta = false
 		get_tree().call_group("portal", "teleporta")
+		get_tree().call_group("portal", "KeyE_hidden")
 		get_node("Timer").start(0.5)
 
 func apply_push_force():
@@ -109,8 +110,9 @@ func is_near_wall():
 	return wallchacker.is_colliding()
 
 func _on_area_2d_area_entered(area):
-	if area.is_in_group("portal"):
+	if area.is_in_group("portal") and portal == false:
 		portal = true
+		get_tree().call_group("portal", "KeyE")
 	elif area.is_in_group("wall_button"):
 		button_wall = true
 	elif area.is_in_group("checkpoint1"):
@@ -120,11 +122,14 @@ func _on_area_2d_area_entered(area):
 	elif area.is_in_group("thorn"):
 		position = Global.checkpoint
 		dead.play()
+	elif area.is_in_group("victory"):
+		get_tree().change_scene_to_file("res://scene/menu_progress.tscn")
 	Global.obj = area
 
 func _on_area_2d_area_exited(area):
 	if area.is_in_group("portal"):
 		portal = false
+		get_tree().call_group("portal", "KeyE_hidden")
 	if area.is_in_group("wall_button"):
 		button_wall = false
 	Global.obj = area

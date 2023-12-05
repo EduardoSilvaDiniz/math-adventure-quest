@@ -11,7 +11,7 @@ func _ready():
 func fufando():
 	match Global.obj:
 		button_1:
-			print("funcionando 1")
+			get_tree().call_group("gate", "del_gate2")
 		button_2:
-			print("funcionando 2")
+			get_tree().call_group("gate", "del_gate3")
 	sound.play()

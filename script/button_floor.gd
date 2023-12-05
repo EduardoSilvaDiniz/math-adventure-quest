@@ -12,11 +12,9 @@ func _on_area_2d_area_entered(area):
 		button_1:
 			get_parent().get_node("portal_azul_1").position = Vector2(1280, 400)
 		button_2:
-			print("botão certo")
+			get_tree().call_group("gate", "del_gate")
 	sound.play()
 func _on_area_2d_area_exited(area):
 	match area:
 		button_1:
 			get_parent().get_node("portal_azul_1").position = Vector2(721, 158)
-		button_2:
-			print("saiu do botão certo")

@@ -1,5 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://0e33j7bdjbht"]
+[gd_scene load_steps=7 format=3 uid="uid://0e33j7bdjbht"]
 
+[ext_resource type="FontFile" uid="uid://nhkk6ds0x134" path="res://assents/font/SigmarOne-Regular.ttf" id="2_gsfsd"]
 [ext_resource type="AudioStream" uid="uid://dclw68gh0cesl" path="res://assents/sounds/interaction/portal.ogg" id="2_xu3d7"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tush1"]
@@ -22,7 +23,7 @@ size = Vector2(53, 84)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4fw7i"]
 size = Vector2(53, 84)
 
-[node name="portal" type="CharacterBody2D"]
+[node name="portal" type="CharacterBody2D" groups=["portal"]]
 collision_layer = 0
 collision_mask = 0
 
@@ -43,3 +44,14 @@ shape = SubResource("RectangleShape2D_4fw7i")
 [node name="sound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_xu3d7")
 volume_db = -10.0
+
+[node name="keyE" type="Label" parent="."]
+offset_left = 24.0
+offset_top = -94.0
+offset_right = 717.0
+offset_bottom = 1544.0
+scale = Vector2(0.05, 0.05)
+theme_override_fonts/font = ExtResource("2_gsfsd")
+theme_override_font_sizes/font_size = 1000
+horizontal_alignment = 1
+vertical_alignment = 1
