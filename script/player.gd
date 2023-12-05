@@ -12,9 +12,6 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 var direction = 1
 @onready var animation := $sprite as AnimatedSprite2D # variavel para manipular a sprite do player
 @onready var wallchacker := $wallchecker as RayCast2D
-#ar button = preload("res://scene/button.tscn").instance()
-#var buttonTexture = preload("res://assents/background/2 - Autumn Forest/Terrain (16 x 16).png")
-#get_node("../..").add_child(button)
 
 var button_wall = false #confere se o botão da parede está sendo tocado
 var portal = false #confere se o portal está sendo tocado
@@ -46,7 +43,7 @@ func _physics_process(delta):
 
 		STATES.FLOOR: # caso ele esteja no chão
 			if Input.is_action_pressed("ui_right"): # se precionar seta direita
-				if Input.is_action_pressed("run"): # se estiver segurando o botão de corre
+				if Input.is_action_pressed("run"): # se estiver segurando o botão de corre (z)
 					velocity.x = lerp(velocity.x,RUNSPEED,0.1) # vai para direita com a velocidade de corrida
 				else:
 					velocity.x = lerp(velocity.x,SPEED,0.1) # vai para direita com a velocidade normal
@@ -68,9 +65,6 @@ func _physics_process(delta):
 				playerState = STATES.AIR # e muda a situação para AIR, pulando
 			if not is_on_floor():
 				playerState = STATES.AIR
-			#if Input.is_action_pressed("interaction") and playerOnButton:
-				#button.changeSprite(buttonTexture)
-				#print("apertou")
 			move_and_fall(delta, false) # atualiza o player
 			set_direction()
 			apply_push_force()
@@ -85,10 +79,10 @@ func _physics_process(delta):
 				velocity.y = JUMP_VELOCITY * 0.7
 			move_and_fall(delta, true) # atualiza o player
 	
-	if button_wall == true  and Input.is_key_pressed(KEY_E):
+	if button_wall and Input.is_key_pressed(KEY_E):
 		print("apertou o botão da parede")
 		button_wall = false #desligar para não clicar várias vezes o botão
-	if portal == true and Input.is_key_pressed(KEY_E) and teleporta == true:
+	if portal and Input.is_key_pressed(KEY_E) and teleporta:
 		get_tree().call_group("portal", "teleporta")
 		teleporta = false
 		get_node("Timer").start(0.5)
@@ -102,7 +96,6 @@ func apply_push_force():
 func move_and_fall(delta, slow_fall : bool):
 	if slow_fall:
 		velocity.y = clamp(velocity.y,JUMP_VELOCITY, 200)
-		
 	velocity.y += gravity * delta
 	move_and_slide()
 	
@@ -120,7 +113,7 @@ func _on_area_2d_area_entered(area):
 		print('tocou no botão da parede')
 		button_wall = true
 	Global.obj = area
-	pass # Replace with function body.
+	
 
 
 func _on_area_2d_area_exited(area):
@@ -129,9 +122,9 @@ func _on_area_2d_area_exited(area):
 	if area.is_in_group("botao_parede"):
 		print('parou de tocar botão da parede')
 		button_wall = false
-	pass # Replace with function body.
+	
 
 
 func _on_timer_timeout():
 	teleporta = true
-	pass # Replace with function body.
+	
