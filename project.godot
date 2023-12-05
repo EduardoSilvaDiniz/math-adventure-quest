@@ -51,6 +51,9 @@ interaction={
 2d_physics/layer_4="portal"
 2d_physics/layer_5="wall_button"
 2d_physics/layer_6="floor_button"
+2d_physics/layer_7="invisible_wall"
+2d_physics/layer_8="espinhos"
+2d_physics/layer_9="checkpoint"
 
 [rendering]
 

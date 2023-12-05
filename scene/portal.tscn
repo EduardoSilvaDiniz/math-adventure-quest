@@ -16,7 +16,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bee0s"]
 size = Vector2(53, 84)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_01if5"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fw7i"]
 size = Vector2(53, 84)
 
 [node name="portal" type="CharacterBody2D"]
@@ -30,9 +30,9 @@ sprite_frames = SubResource("SpriteFrames_8dg2p")
 position = Vector2(0.5, 1)
 shape = SubResource("RectangleShape2D_bee0s")
 
-[node name="portal_azul_1" type="Area2D" parent="." groups=["portal"]]
+[node name="Area2D" type="Area2D" parent="." groups=["portal"]]
 collision_layer = 8
 
-[node name="collision" type="CollisionShape2D" parent="portal_azul_1"]
+[node name="collision" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(0.5, 1)
-shape = SubResource("RectangleShape2D_01if5")
+shape = SubResource("RectangleShape2D_4fw7i")

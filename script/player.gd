@@ -80,7 +80,7 @@ func _physics_process(delta):
 			move_and_fall(delta, true) # atualiza o player
 	
 	if button_wall and Input.is_key_pressed(KEY_E):
-		print("apertou o botão da parede")
+		get_tree().call_group("wall_button", "fufando")
 		button_wall = false #desligar para não clicar várias vezes o botão
 	if portal and Input.is_key_pressed(KEY_E) and teleporta:
 		get_tree().call_group("portal", "teleporta")
@@ -98,7 +98,7 @@ func move_and_fall(delta, slow_fall : bool):
 		velocity.y = clamp(velocity.y,JUMP_VELOCITY, 200)
 	velocity.y += gravity * delta
 	move_and_slide()
-	
+
 func set_direction():
 	direction = 1 if not animation.flip_h else -1
 	wallchacker.rotation_degrees = 90 * -direction
@@ -109,22 +109,27 @@ func is_near_wall():
 func _on_area_2d_area_entered(area):
 	if area.is_in_group("portal"):
 		portal = true
-	if area.is_in_group("botao_parede"):
-		print('tocou no botão da parede')
+	if area.is_in_group("wall_button"):
+		print("entrou")
 		button_wall = true
+	if area.is_in_group("checkpoint1"):
+		print("checkpoint 1")
+		Global.checkpoint = Vector2(1282, 631)
+	if area.is_in_group("checkpoint1"):
+		print("checkpoint 2")
+		Global.checkpoint = Vector2(78, 573)
+	if area.is_in_group("espinho"):
+		print("morri")
+		position = Global.checkpoint
 	Global.obj = area
-	
-
 
 func _on_area_2d_area_exited(area):
 	if area.is_in_group("portal"):
 		portal = false
-	if area.is_in_group("botao_parede"):
-		print('parou de tocar botão da parede')
+	if area.is_in_group("wall_button"):
 		button_wall = false
+	Global.obj = area
 	
-
 
 func _on_timer_timeout():
 	teleporta = true
-	

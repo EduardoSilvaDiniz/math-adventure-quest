@@ -13,8 +13,6 @@ func _on_area_2d_area_entered(area):
 			get_parent().get_node("portal_azul_1").position = Vector2(1280, 400)
 		button_2:
 			print("botão certo")
-		_:
-			print('botão errado')
 
 func _on_area_2d_area_exited(area):
 	match area:
@@ -22,5 +20,3 @@ func _on_area_2d_area_exited(area):
 			get_parent().get_node("portal_azul_1").position = Vector2(721, 158)
 		button_2:
 			print("saiu do botão certo")
-		_:
-			print('saiu do botão errado')
